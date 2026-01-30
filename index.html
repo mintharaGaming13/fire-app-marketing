@@ -1,0 +1,312 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="FireCheckpoint is a personal portfolio and FIRE tracking app for clarity, control, and calm." />
+  <title>FireCheckpoint — Clarity for your portfolio. Calm for your FIRE plan.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DH9RXWJYHR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DH9RXWJYHR');
+  </script>
+</head>
+<body>
+  <div class="bg">
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+    <div class="grid"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="#top">
+        <img src="assets/favicon.ico" alt="FireCheckpoint logo" />
+        <span>FireCheckpoint</span>
+      </a>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#screens">Screens</a>
+        <a href="#philosophy">Philosophy</a>
+        <a href="#status">Status</a>
+        <a class="button ghost js-interest-cta" href="#waitlist">Join the interest list</a>
+      </nav>
+      <button class="menu" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="kicker">Built by a FIRE practitioner. Designed for calm.</p>
+        <h1>Clarity for your portfolio. Calm for your FIRE plan.</h1>
+        <p class="lede">
+          FireCheckpoint shows exactly where you stand, how your portfolio is structured, and
+          how close you are to financial independence — without noise, ads, or sales pressure.
+        </p>
+        <div class="cta">
+          <a class="button js-interest-cta" href="#waitlist">👉 Join the interest list</a>
+          <a class="button ghost" href="#features">Explore features</a>
+        </div>
+        <div class="hero-badges">
+          <span>Currently validating interest before opening early access.</span>
+          <span>Private, invite-only</span>
+          <span>Your rules, your checkpoints.</span>
+        </div>
+      </div>
+      <div class="hero-cards">
+        <article class="card reveal">
+          <p class="card-label">Portfolio overview</p>
+          <p class="card-value">All accounts, one view</p>
+          <p class="card-meta">Positions, market value, trailing dividends.</p>
+        </article>
+        <article class="card highlight reveal">
+          <p class="card-label">Allocation delta</p>
+          <p class="card-value">Targets vs reality</p>
+          <p class="card-meta">See exactly how much to rebalance.</p>
+        </article>
+        <article class="card reveal">
+          <p class="card-label">Runway</p>
+          <p class="card-value">Cash + bonds</p>
+          <p class="card-meta">Downside protection for sleep quality.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="proof container">
+      <div class="proof-grid">
+        <div>
+          <h2>Built for serious planners</h2>
+          <p>
+            FireCheckpoint focuses on current reality and actionable trade-offs. Track your progress,
+            understand your exposure, and make confident moves without spreadsheet fatigue.
+          </p>
+        </div>
+        <div class="proof-stats">
+          <div>
+            <h3>Portfolio clarity</h3>
+            <p>See positions, value, and trailing 12-month dividends in one place.</p>
+          </div>
+          <div>
+            <h3>Actionable deltas</h3>
+            <p>Instantly know what to buy or trim to stay aligned with targets.</p>
+          </div>
+          <div>
+            <h3>Defensive planning</h3>
+            <p>Runway metrics designed for market volatility and career transitions.</p>
+          </div>
+          <div>
+            <h3>Spending guardrails</h3>
+            <p>Define guardrails so your spending stays resilient in different market conditions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <div class="section-title">
+        <h2>Everything you need to stay on track</h2>
+        <p>Clear dashboards, precise allocation tools, and calm FIRE checkpoints.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <h3>Portfolio overview</h3>
+          <p>View all accounts in one place. Track positions, total market value, and projected dividends.</p>
+          <ul>
+            <li>Stocks, ETFs, mutual funds, bonds, and cash</li>
+            <li>Trailing 12-month dividend rollups</li>
+            <li>Multi-account totals</li>
+          </ul>
+        </article>
+        <article class="feature-card reveal">
+          <h3>Asset allocation</h3>
+          <p>Define target allocations and compare against reality with clear deltas.</p>
+          <ul>
+            <li>Custom categories and targets</li>
+            <li>Instant rebalancing guidance</li>
+            <li>Drift and concentration visibility</li>
+          </ul>
+        </article>
+        <article class="feature-card reveal">
+          <h3>Allocation-based cash flow</h3>
+          <p>Enter a lump sum to invest or withdraw. Get a recommended split.</p>
+          <ul>
+            <li>Ideal for bonuses and vesting events</li>
+            <li>Supports drawdown planning</li>
+            <li>Aligned with your target mix</li>
+          </ul>
+        </article>
+        <article class="feature-card reveal">
+          <h3>Analytics by category</h3>
+          <p>Slice your portfolio by asset class or any custom category.</p>
+          <ul>
+            <li>Charts, bars, and lists</li>
+            <li>Spot concentration risk quickly</li>
+            <li>Track drift over time</li>
+          </ul>
+        </article>
+        <article class="feature-card reveal">
+          <h3>FIRE progress tracking</h3>
+          <p>Track progress toward your FIRE number and dividend coverage.</p>
+          <ul>
+            <li>Needs, wants, and total coverage</li>
+            <li>Dividend income projection</li>
+            <li>Simple, honest progress view</li>
+          </ul>
+        </article>
+        <article class="feature-card reveal">
+          <h3>Guardrails for spending</h3>
+          <p>Define guardrails that keep spending in bounds when markets move.</p>
+          <ul>
+            <li>Set upper and lower spending thresholds</li>
+            <li>Align guardrails with coverage and runway</li>
+            <li>Make trade-offs explicit in real time</li>
+          </ul>
+        </article>
+        <article class="feature-card reveal">
+          <h3>Runway and downside protection</h3>
+          <p>Measure cash and conservative runway for peace of mind.</p>
+          <ul>
+            <li>Cash runway in months</li>
+            <li>Cash + bonds runway</li>
+            <li>Designed for optionality</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="screens" class="screens container">
+      <div class="section-title">
+        <h2>Designed for focus</h2>
+        <p>Calm, data-first screens inspired by your workflow.</p>
+      </div>
+      <div class="screen-grid">
+        <figure class="screen reveal">
+          <img src="assets/screens/asset-llocation.png" alt="Asset allocation targets vs current" />
+          <figcaption>Asset allocation targets vs reality</figcaption>
+        </figure>
+        <figure class="screen reveal">
+          <img src="assets/screens/analytics.png" alt="Analytics by category" />
+          <figcaption>Analytics by category</figcaption>
+        </figure>
+        <figure class="screen reveal">
+          <img src="assets/screens/home.png" alt="Portfolio positions list" />
+          <figcaption>Positions list and totals</figcaption>
+        </figure>
+        <figure class="screen reveal">
+          <img src="assets/screens/fire.png" alt="FIRE progress dashboard" />
+          <figcaption>FIRE progress and runway</figcaption>
+        </figure>
+      </div>
+
+    </section>
+
+    <section class="steps container">
+      <div class="section-title">
+        <h2>How it works</h2>
+      </div>
+      <div class="step-grid">
+        <div class="step reveal">
+          <span>01</span>
+          <h3>Connect or import</h3>
+          <p>Bring in your accounts, positions, and balances.</p>
+        </div>
+        <div class="step reveal">
+          <span>02</span>
+          <h3>Set your targets</h3>
+          <p>Define allocations and spending coverage metrics.</p>
+        </div>
+        <div class="step reveal">
+          <span>03</span>
+          <h3>Check your runway</h3>
+          <p>Know how long your portfolio supports your plan.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="philosophy" class="philosophy container">
+      <div class="quote reveal">
+        <p>“Wealth is not just about maximizing returns — it’s about maximizing freedom and sleep quality.”</p>
+        <span>FireCheckpoint philosophy</span>
+      </div>
+      <div class="principles">
+        <div>
+          <h3>Current reality</h3>
+          <p>No forecasts. No Monte Carlo noise. Just your numbers and your trade-offs.</p>
+        </div>
+        <div>
+          <h3>Clear decisions</h3>
+          <p>Actionable deltas, focused dashboards, and defensive planning tools.</p>
+        </div>
+        <div>
+          <h3>Calm by design</h3>
+          <p>Built for clarity, control, and a quieter financial life.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="status" class="status container">
+      <div class="status-card reveal">
+        <div>
+          <h2>Status</h2>
+          <p>Actively developed and currently used for personal portfolio tracking.</p>
+          <p>Currently validating interest before opening early access.</p>
+        </div>
+        <div class="status-pill">Private / invite-only</div>
+      </div>
+    </section>
+
+    <section id="waitlist" class="waitlist container">
+      <div class="waitlist-card reveal">
+        <div>
+          <h2>Join the interest list</h2>
+          <p>FireCheckpoint is evolving privately. Join the list to get updates.</p>
+        </div>
+        <div class="waitlist-form">
+          <a class="button js-interest-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdpdU-2FUKzj0MQAaJ0MAoxxzWuCwVU0WhvBHQ4wx9AxQd_IA/viewform?usp=publish-editor" target="_blank" rel="noopener">👉 Join the interest list</a>
+        </div>
+        <p class="fine">No spam. No ads. Just updates.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="#top">
+          <img src="assets/favicon.ico" alt="FireCheckpoint logo" />
+          <span>FireCheckpoint</span>
+        </a>
+        <p>Personal portfolio and FIRE tracking for clarity and calm.</p>
+      </div>
+      <div>
+        <h4>Focus</h4>
+        <ul>
+          <li>Portfolio overview</li>
+          <li>Allocation tools</li>
+          <li>Spending guardrails</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Questions, feedback, or early access requests:</p>
+        <p>support@firecheckpoint.app</p>
+        <p>FireCheckpoint is an early-stage personal project. Responses may take a bit, but every message is read.</p>
+      </div>
+    </div>
+    <p class="legal">FireCheckpoint is a personal portfolio tracking tool. It does not provide financial, tax, or investment advice.</p>
+    <p class="legal">© 2026 FireCheckpoint. All rights reserved.</p>
+  </footer>
+</body>
+</html>
