@@ -25,9 +25,9 @@ document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 document.querySelectorAll(".js-interest-cta").forEach((cta) => {
   cta.addEventListener("click", () => {
     if (typeof window.gtag === "function") {
-      window.gtag("event", "interest_list_click", {
+      window.gtag("event", "cta_click", {
         event_category: "engagement",
-        event_label: "Join the interest list",
+        event_label: "View real screenshots",
       });
     }
   });
