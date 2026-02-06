@@ -131,6 +131,12 @@ Example:
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = window.gtag || function () {
+        window.dataLayer.push(arguments);
+      };
+    </script>
     <a href="/#waitlist" onclick="gtag('event', 'demo_to_waitlist_click');" style="position:fixed;right:20px;bottom:20px;z-index:9999;display:inline-flex;align-items:center;gap:6px;padding:10px 14px;border-radius:9999px;background:#1d4ed8;color:#fff;font:600 14px/1.2 'Space Grotesk',system-ui,sans-serif;text-decoration:none;box-shadow:0 8px 20px rgba(15,23,42,.2);">
       Request early access
     </a>
