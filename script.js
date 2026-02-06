@@ -32,3 +32,28 @@ document.querySelectorAll(".js-interest-cta").forEach((cta) => {
     }
   });
 });
+
+const trackGaEvent = (name, params) => {
+  if (typeof window.gtag !== "function") return;
+  window.gtag("event", name, params);
+};
+
+document.querySelectorAll(".js-view-demo").forEach((link) => {
+  link.addEventListener("click", () => {
+    trackGaEvent("view_demo_click", {
+      event_category: "engagement",
+      event_label: "Live demo",
+      link_url: link.getAttribute("href") || "",
+    });
+  });
+});
+
+document.querySelectorAll(".js-early-access").forEach((link) => {
+  link.addEventListener("click", () => {
+    trackGaEvent("early_access_open", {
+      event_category: "conversion",
+      event_label: "Request early access",
+      link_url: link.getAttribute("href") || "",
+    });
+  });
+});
